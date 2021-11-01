@@ -1,0 +1,18 @@
+.container {
+    background-color: orange;
+    height: 100vh;
+}
+
+.parent-container {
+    height: calc(100% - 65px);
+    display: flex;
+}
+
+.nav-container {
+    height: 65px;
+}
+
+.MuiToolbar-root {
+    height: 50px;
+    background-color: black;
+}
