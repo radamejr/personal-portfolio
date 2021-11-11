@@ -1,10 +1,9 @@
 
-import { Box, AppBar, Toolbar } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import React from 'react';
 import DrawerContentComponent from '../drawer-content/drawer-content';
+import SkillsContentComponent from '../skills-content/skills-content-component';
+import TopBarComponent from '../top-bar/top-bar.component';
 import './content.css'
 
 const ContentComponent = () => {
@@ -28,15 +27,7 @@ const ContentComponent = () => {
         };
     return (
         <div className="content-nav-bar">
-            <Box sx={{ flexGrow: 1}}>
-                <AppBar position="static">
-                <Toolbar variant="regular">
-                    <IconButton onClick={toggleDrawer(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-                    <MenuIcon />
-                    </IconButton>
-                </Toolbar>
-                </AppBar>
-            </Box>
+            <TopBarComponent openDrawer={toggleDrawer(true)}/>
             <Drawer
                 sx={{ 
                     width: '30%',
@@ -51,11 +42,10 @@ const ContentComponent = () => {
                 onClose={toggleDrawer(false)}
                 className="drawer-content"
             >
-                <DrawerContentComponent />
+                <DrawerContentComponent closeDrawer={toggleDrawer(false)}/>
             </Drawer>
             <div className="details">
-                Carousel: AerialSphere, JsFiddles AerialSphere, Languages/Tools, Framehameha
-                Centered, large, images/details
+                <SkillsContentComponent />
             </div>            
         </div>
           

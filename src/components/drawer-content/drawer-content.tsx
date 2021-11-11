@@ -1,11 +1,22 @@
 import { Card } from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
 import pictureOfMePath from '../../assets/radame.jpg'
-import './drawer-content.css'
 import details from '../../assets/details.json'
+import './drawer-content.css'
 
-const DrawerContentComponent = () => {
+export interface DrawerComponentProps {
+    closeDrawer: (event: React.KeyboardEvent | React.MouseEvent) => void
+}
+const DrawerContentComponent = (props: DrawerComponentProps) => {
+    const { closeDrawer } = props;
     return (
         <Card sx={{ backgroundColor: "grey"}}className="about" variant="outlined" >
+            <div className="close">
+                <IconButton onClick={closeDrawer} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                    <CloseIcon />
+                </IconButton>
+            </div>
             <div className="image">
                 <img src={pictureOfMePath} alt="me" className="profile-picture" />
             </div>

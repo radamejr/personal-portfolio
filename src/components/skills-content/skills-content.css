@@ -1,0 +1,8 @@
+.skills-container {
+    width: 65%;
+    margin-top: 10px;
+}
+
+.MuiTabs-indicator {
+    background-color: orange !important;
+}
