@@ -37,7 +37,11 @@ const a11yProps =(index: number) => {
     };
   }
 
-const SkillsContentComponent = () => {
+export interface SkillsContentComponentProps {
+  deviceType: string;
+}
+const SkillsContentComponent = (props: SkillsContentComponentProps) => {
+    const { deviceType } = props;
     const theme = useTheme();
     const [value, setValue] = React.useState(0);
 
@@ -50,7 +54,7 @@ const SkillsContentComponent = () => {
     };
 
     return (
-        <Box className="skills-container" sx={{ bgcolor: 'background.paper' }}>
+        <Box className={`skills-container ${deviceType}`} sx={{ bgcolor: 'background.paper' }}>
             <AppBar position="static" sx={{ 
                   backgroundColor: 'black'
                 }}>
@@ -73,13 +77,13 @@ const SkillsContentComponent = () => {
                 onChangeIndex={handleChangeIndex}
             >
                 <TabPanel value={value} index={0} dir={theme.direction}>
-                  <TabContentComponent type="professional" />
+                  <TabContentComponent deviceType={deviceType} type="professional" />
                 </TabPanel>
                 <TabPanel value={value} index={1} dir={theme.direction}>
-                  <TabContentComponent type="personal" />
+                  <TabContentComponent deviceType={deviceType} type="personal" />
                 </TabPanel>
                 <TabPanel value={value} index={2} dir={theme.direction}>
-                  <TabContentComponent type="skills" />
+                  <TabContentComponent deviceType={deviceType} type="skills" />
                 </TabPanel>
             </SwipeableViews>
             </Box>

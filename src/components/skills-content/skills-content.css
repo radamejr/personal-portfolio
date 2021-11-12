@@ -4,6 +4,9 @@
     border: solid black 2px;
 }
 
+.skills-container.mobile {
+    width: 95%;
+}
 .MuiTabs-indicator {
     background-color: white !important;
 }

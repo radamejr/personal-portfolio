@@ -3,13 +3,14 @@ import './skills-card.css'
 
 export interface SkillsCardComponentProps {
     skills: string[][]
+    deviceType: string;
 }
 const SkillsCardComponent = (props: SkillsCardComponentProps) => {
-    const { skills } = props;
+    const { deviceType, skills } = props;
 
     return (
         <Card className="tab-content" >
-            <ul className="skill-list">
+            <ul className={`skill-list ${deviceType}`}>
                 {
                     skills.map((skill) => {
                         return(
@@ -20,7 +21,6 @@ const SkillsCardComponent = (props: SkillsCardComponentProps) => {
                                 <div>
                                     <img className="skill-image" src={skill[1]} alt="technology" />
                                 </div>
-                                
                             </li>
                         )
                     })

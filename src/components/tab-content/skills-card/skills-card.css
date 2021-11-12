@@ -4,6 +4,10 @@
     width: 110%;
 }
 
+.skill-list.mobile {
+    grid-template-columns:  100%;
+}
+
 .skill-image {
     height: 50px;
     width: 50px;

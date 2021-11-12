@@ -8,6 +8,9 @@
     max-height: calc(100vh - 240px);
     overflow-y: auto !important;
 }
+.tab-content.mobile .tab-name {
+    font-size: 35px;
+}
 .responsibilities {
     font-size: 25px;
 }

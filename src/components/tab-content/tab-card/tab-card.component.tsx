@@ -6,13 +6,14 @@ export interface TabCardComponentProps {
     description: string;
     responsibilities: string[];
     website: string;
+    deviceType: string;
     examples?: string[];
 }
 
 const TabCardComponent = (props: TabCardComponentProps) => {
-    const { name, description, responsibilities, website, examples } = props;
+    const { name, description, responsibilities, website, examples, deviceType } = props;
     return (
-        <Card className="tab-content" >
+        <Card className={`tab-content ${deviceType}`} >
             <div className="tab-name">
                 {name}
             </div>
@@ -24,9 +25,9 @@ const TabCardComponent = (props: TabCardComponentProps) => {
                 Responsibilities:
             </div>
             <ul className="tab-list">
-                {responsibilities.map((task) => {
+                {responsibilities.map((task, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             {task}
                         </li>
                     )
@@ -39,7 +40,7 @@ const TabCardComponent = (props: TabCardComponentProps) => {
                 <br />
                 {examples?.map((example, index) => {
                     return (
-                        <div>
+                        <div key={index}>
                             <a href={example} rel="noreferrer" target="_blank">Viewer Example {index + 1}</a>
                             <br />
                         </div>

@@ -6,12 +6,13 @@ import details from '../../assets/details.json'
 import './drawer-content.css'
 
 export interface DrawerComponentProps {
+    deviceType: string;
     closeDrawer: (event: React.KeyboardEvent | React.MouseEvent) => void
 }
 const DrawerContentComponent = (props: DrawerComponentProps) => {
-    const { closeDrawer } = props;
+    const { deviceType, closeDrawer } = props;
     return (
-        <Card sx={{ backgroundColor: "grey"}}className="about" variant="outlined" >
+        <Card sx={{ backgroundColor: "grey"}} className={`about ${deviceType}`} variant="outlined" >
             <div className="close">
                 <IconButton onClick={closeDrawer} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                     <CloseIcon />
