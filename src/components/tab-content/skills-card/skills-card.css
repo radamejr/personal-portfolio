@@ -1,0 +1,20 @@
+.skill-list {
+    display: grid;
+    grid-template-columns:  50% 50%;
+    width: 110%;
+}
+
+.skill-image {
+    height: 50px;
+    width: 50px;
+    float: right;
+}
+.skill-text {
+    font-size: 25px;
+}
+.skill-list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 5px 0px;
+}

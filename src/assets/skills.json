@@ -1,11 +1,40 @@
 {
     "professional": {
-
+        "name": "Aerial Sphere",
+        "description": "AerialSphere is the only company to combine 360-degree aerial imagery with location data, giving companies new vantage points to make better informed decisions. Built upon nearly a decade of research and patented technological innovation, AerialSphere is changing how companies plan, develop and market their properties, products, and services. I have worked on near every aspect of our technology. However my primary focuses have been our embeded XP360 API viewer, the accompying website for account management, our Django REST api and our integration with ESRI.",
+        "responsibilities": [
+            "Develop and maintain Django REST API's", 
+            "Develop and maintain embedded XP360 API for client use", 
+            "Develop and maintain several AWS technologies including: LAMBDAs, DynamoDB, S3, API Gateway",
+            "Develop React based website for API clients to manage and sign-up our API service",
+            "Develop propriertary processes for integration into the ESRI platform and creation of Oriented Imagery Catalogs",
+            "Develop JSFiddle examples using our embedded API for our documentation"
+        ],
+        "website": "https://www.aerialsphere.com/",
+        "examples": ["https://www.aerialsphere.com/imagery-solutions/", "https://jsfiddle.net/AerialSphere/57fsbeu1/7/"]
     },
     "personal": {
-
+        "name": "Framehameha",
+        "description": "Framehameha is a resource created for the ArcSystem Works developed fighting game, 'Dragonball Fighterz'. Its use and purpose is to bring together data from multiple sources including google sheets, discord servers and another website called combosuki. It helps players gain access to all of theses quicker and easier.",
+        "responsibilities": [
+            "Develop and maintain front end React site",
+            "Develop and maintain backend Ruby on Rails REST API",
+            "Develop and maintain custom presentation of individual character details, learning zone and general game information"
+        ],
+        "website": "https://www.framehameha.com/"
     },
     "skills": {
-        
+        "technology": [
+            ["React", "https://image.flaticon.com/icons/png/512/919/919851.png"],
+            ["Javascript", "https://images.vexels.com/media/users/3/166403/isolated/preview/a5a33bf3004830a2bd581e9fa65de660-javascript-programming-language-icon-by-vexels.png"],
+            ["Typescript", "https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png"],
+            ["Redux", "https://javascript.tutorialhorizon.com/files/2016/06/redux-logo.png"],
+            ["Amazon S3", "https://icon-library.com/images/amazon-s3-icon/amazon-s3-icon-27.jpg"],
+            ["Django", "https://nedbatchelder.com/pix/django-icon-256.png"],
+            ["Python", "https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png"],
+            ["Lambda", "https://www.stratoscale.com/wp-content/uploads/AWS-Lambda.png"],
+            ["DynamoDB", "https://www.shareicon.net/data/512x512/2015/08/28/92226_database_512x512.png"],
+            ["API Gateway", "https://s3-us-west-2.amazonaws.com/assertible/blog/aws-api-gateway-icon.png"]
+        ]
     }
 }

@@ -1,0 +1,19 @@
+.tab-name {
+    font-size: 40px;
+}
+
+.tab-content {
+    font-family: 'Shadows Into Light', cursive;
+    padding: 25px;
+    max-height: calc(100vh - 240px);
+    overflow-y: auto !important;
+}
+.responsibilities {
+    font-size: 25px;
+}
+
+.tab-list {
+    flex-direction: column;
+    list-style: circle;
+    padding-left: 25px;
+}

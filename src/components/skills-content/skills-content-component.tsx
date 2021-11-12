@@ -2,6 +2,7 @@ import { AppBar, Box, Tab, Tabs, Typography, useTheme } from "@mui/material";
 import SwipeableViews from 'react-swipeable-views';
 import React from "react";
 import './skills-content.css'
+import TabContentComponent from "../tab-content/tab-content-component";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -72,13 +73,13 @@ const SkillsContentComponent = () => {
                 onChangeIndex={handleChangeIndex}
             >
                 <TabPanel value={value} index={0} dir={theme.direction}>
-                    Item One
+                  <TabContentComponent type="professional" />
                 </TabPanel>
                 <TabPanel value={value} index={1} dir={theme.direction}>
-                    Item Two
+                  <TabContentComponent type="personal" />
                 </TabPanel>
                 <TabPanel value={value} index={2} dir={theme.direction}>
-                    Item Three
+                  <TabContentComponent type="skills" />
                 </TabPanel>
             </SwipeableViews>
             </Box>
