@@ -66,9 +66,9 @@ const SkillsContentComponent = (props: SkillsContentComponentProps) => {
                 variant="fullWidth"
                 aria-label="skills tabs"
                 >
-                  <Tab label="Professional" {...a11yProps(0)} />
-                  <Tab label="Personal" {...a11yProps(1)} />
-                  <Tab label="Skills" {...a11yProps(2)} />
+                  <Tab className="skills-tab" label="Professional" {...a11yProps(0)} />
+                  <Tab className="skills-tab" label="Personal" {...a11yProps(1)} />
+                  <Tab className="skills-tab" label="Skills" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
             <SwipeableViews

@@ -2,6 +2,12 @@
     width: 65%;
     margin-top: 10px;
     border: solid black 2px;
+    font-family: 'New Rocker', cursive !important;
+    
+}
+
+.skills-tab {
+    font-family: 'New Rocker', cursive !important;
 }
 
 .skills-container.mobile {
